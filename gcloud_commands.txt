@@ -1,0 +1,5 @@
+USER LOGIN 					gcloud auth login
+APPLICATION DEFAULT LOGIN 			gcloud auth application-default login
+INITIALIZE GOOGLE CLOUD				gcloud init
+INSTALL COMPONENTS 				gcloud components install <component_name>
+CONFIGURE KUBECTL TO RUN GCLOUD CLUSTER		gcloud container clusters get-credentials <cluster_name>

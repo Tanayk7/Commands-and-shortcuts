@@ -1,0 +1,31 @@
+DISPLAY VERSION 						kubectl version
+TELL KUBERNETES TO PROCESS CONFIG FILE			kubectl apply -f <config_file>
+GET ALL RUNNING PODS 					kubectl get pods
+EXECUTE GIVEN COMMAND IN A RUNING POD			kubectl exec -it <pod_name> <cmd>
+PRINT OUT LOGS FROM THE GIVEN POD 			kubectl logs <pod_name>
+DELETE THE GIVEN POD					kubectl delete pod <pod_name>
+PRINT OUT INFO ABOUT RUNNING POD				kubectl describe pod <pod_name>
+PRINT INFO ABOUT jwt-secret					kubectl describe jws-secret
+
+LIST ALL THE RUNNING DEPLOYMENTS				kubectl get deployments
+PRINT DETAILS ABOUT A SPECIFIC DEPLOYMENT 			kubectl describe deployment <depl_name>
+CREATE A DEPLOYMENT OUT OF A CONFIG FILE 			kubectl apply -f <config_file>
+DELETE A DEPLOYMENT 					kubectl delete deployment <depl_name>
+
+RESTART A DEPLOYMENT 					kubectl rollout restart deployment <depl_name>
+
+GET ALL SERVICES 						kubectl get services
+DESCRIBE A SERVICE 					kubectl describe service <service_name>
+
+GET CURRENT CONTEXT					kubectl config current-context
+GET ALL KUBERNETES CONTEXTS				kubectl config get-contexts
+USE A KUBERNETES CONTEXT 					kubectl config use-context <context_name>
+
+CREATE A JWT SECRET					kubectl create secret generic jwt-secret --from-literal=jwt=<secret_key>
+
+LIST ALL NAMESPACES					kubectl get namespace
+LIST ALL SERVICES IN A NAMESPACE 				kubectl get services -n <namespace_name>
+
+PORT FORWARDING 					kubectl port-forward <pod_name> <local_port>:<pod_port>
+
+DOMAIN NAME TO SEND REQUESTS TO SERVICES OUTSIDE OF DEFAULT NAMESPACE - http://<namespace_name>:<service_name>.svc.cluster.local

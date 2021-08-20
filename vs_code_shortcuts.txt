@@ -1,0 +1,2 @@
+CLOSE A FILE 				CTRL + W
+FIND A FLIE 				CTRL + P

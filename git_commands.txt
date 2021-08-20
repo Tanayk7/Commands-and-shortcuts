@@ -1,0 +1,43 @@
+git clone <repo_url>
+git clone -b <remote_branch> <repo_url>		- Clone particular branch from remote repo
+
+git branch <branch_name>				- Create a new branch 
+git branch -vv 					- View branch info
+git branch -m <old_name> <new_name>		- Change branch name 
+git branch --set-upstream-to <origin/branch>		- Set upstream tracking branch 
+git branch -d <branch-name>			- Delete a branch 
+
+git checkout <branch_name>			- Switch branch 
+git checkout -b <name-of-your-branch>		- Create and switch to branch at the same time 
+
+git add <file_name>				- Add particular file to stagin area
+git add .						- Add files to staging area
+
+git rm <file_name> 					- remove file from git repo
+git rm --cached <file_name> 				- remove files from staging area
+
+git commit -m ''					- Commit your changes with a commit message 
+git commit --amend -m “<your_new_commit_message>”	- Change commit message for last commit
+
+git push <remote> <branch_name>			- Push to remote branch with same name as local
+git push <remote> <local_branch>:<remote_branch>	- Push to particular remote branch 
+git push -u <remote> <local_branch>			- Push to remote and set upstream tracking 
+
+git pull <remote> <local_branch>			- Pull from particular remote branch 
+
+git revert <commit_hash> 				- Will undo the given commit, but will create a new commit without deleting the older 						  	  		   one
+git reset --hard HEAD~1				- Rollback commit by 1 commit 
+
+git merge <branch_name> 				- merge current branch with specified branch
+git cherry-pick <commit_id>				- merge only certain commits
+
+git remote add <remote_name> <repo_url>		- Add a remote repo 
+git remote remove <remote_namee>			- Remove remote repo 
+git remote -vv 					- View remote into 
+
+git status 						- View current branch into 
+git log 						- View commit history
+git diff <hash_of_first_commit> <hash_of_second_commit>	- takes data sources as inputs and outputs the differences. Data sources can be files, 						    	  		  commits, branches etc
+
+git log > commit_history.txt				- Output git commit history to a text file 
+git log --oneline --decorate > log.txt			- Minimal output git commit history to a text file 

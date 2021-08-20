@@ -1,0 +1,37 @@
+TO PRINT VERSION					docker version
+
+TO START THE DOCKER DAEMON IF IT DOES NOT START -   	& 'C:\Program Files\Docker\Docker\DockerCli.exe' -SwitchDaemon
+
+TO CREATE A CONTAINER - 				docker create <container_name>
+
+TO START A CONTAINER - 				docker start <container_id>
+TO START A CONTAINER AND PRINT OUTPUT 		docker start -a <container_id>
+
+TO GET OUTPUT LOGS 				docker logs <container_id>
+
+TO CREATE AND RUN A CONTAINER - 			docker run <container_name>	(docker start + docker run) 
+RUN SHELL ON CONTAINER STARTUP  			docker run -it <container_name> sh
+
+EXECUTE ADDITIONAL COMMAND IN CONTAINER 	docker exec -it <container_id> <command>  (-it allows us to provide input to the container)
+RUN SHELL INSIDE CONTAINER			docker exec -it <container_id> sh
+
+TO STOP A CONTAINER 				docker stop <container_id> 
+TO STOP A CONTAINER IMMEDIATELY			docker kill <container_id>
+TO STOP ALL RUNNING CONTAINERS			docker stop $(docker ps -a -q) 
+TO DELETE ALL STOPPED CONTAINERS			docker system prune
+
+TO PRINT ALL THE RUNNING CONTAINERS - 		docker ps
+TO LIST ALL CONTAINERS EVER CREATED - 		docker ps --all
+
+TO BUILD A DOCKER IMAGE 				docker build . 
+TO TAG AN IMAGE (ADD NAME TO IMAGE) 		docker build -t <docker_id>/<project_name>/<version> <dockerfile_directory>
+
+DOCKER RUN WITH PORT MAPPING 			docker run -p <local_port>:<container_port> <image_id>
+
+PUSH IMAGE TO DOCKER HUB			docker push <image_id>
+
+
+
+
+
+

@@ -1,0 +1,3 @@
+bcdedit /set hypervisorlaunchtype <value> (off/auto) - to turn hypervisor on/off
+wsl ---shutdown - to shutdown wsl (vmmem process)
+

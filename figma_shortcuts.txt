@@ -1,0 +1,5 @@
+Figma shortcuts
+alt drag element then ctrl + d
+select elements then shift + select to unselect unwanted 
+shift selct + left/right/up/down to move elements
+select then ctrl + g to group elements 
