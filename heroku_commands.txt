@@ -1,0 +1,7 @@
+install heroku                          install -g heroku
+show heroku version                     heroku --version
+login to heroku cli in browser          heroku login
+login to heroku cli in terminal         heroku login -i
+create heroku app                       heroku create <app-name>
+set environment variables               heroku config:set <key=value>
+open heroku app in browser              heroku open
