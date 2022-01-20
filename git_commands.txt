@@ -28,6 +28,8 @@ git pull <remote> <local_branch>			- Pull from particular remote branch
 git revert <commit_hash> 				- Will undo the given commit, but will create a new commit without deleting the older 						  	  		   one
 git reset --hard HEAD~1				- Rollback commit by 1 commit 
 
+git merge --abort             - Abort a merge 
+
 git merge <branch_name> 				- merge current branch with specified branch
 git cherry-pick <commit_id>				- merge only certain commits
 
