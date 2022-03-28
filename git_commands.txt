@@ -25,8 +25,10 @@ git push -u <remote> <local_branch>			- Push to remote and set upstream tracking
 
 git pull <remote> <local_branch>			- Pull from particular remote branch 
 
-git revert <commit_hash> 				- Will undo the given commit, but will create a new commit without deleting the older 						  	  		   one
-git reset --hard HEAD~1				- Rollback commit by 1 commit 
+git revert <commit_hash> 				- Will undo the given commit, but will create a new commit without deleting the older one
+git reset --hard HEAD~1				- Rollback by 1 commit (all changes made will get rolled back) 
+get reset --soft HEAD~1       - Discard last commit by 1 
+git reset HEAD -- .           - remove all staged files at once 
 
 git merge --abort             - Abort a merge 
 
@@ -43,3 +45,5 @@ git diff <hash_of_first_commit> <hash_of_second_commit>	- takes data sources as 
 
 git log > commit_history.txt				- Output git commit history to a text file 
 git log --oneline --decorate > log.txt			- Minimal output git commit history to a text file 
+
+
