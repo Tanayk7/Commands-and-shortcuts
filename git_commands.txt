@@ -7,6 +7,8 @@ git branch -m <old_name> <new_name>		- Change branch name
 git branch --set-upstream-to <origin/branch>		- Set upstream tracking branch 
 git branch -d <branch-name>			- Delete a branch 
 
+git switch <branch_name>        - Switch to a remote branch (pulls remote branch to local environment) 
+
 git checkout <branch_name>			- Switch branch 
 git checkout -b <name-of-your-branch>		- Create and switch to branch at the same time 
 
