@@ -1,2 +1,19 @@
-CLOSE A FILE 				CTRL + W
-FIND A FLIE 				CTRL + P
+OPEN A FILE OR FOLDER                       CTRL + O
+OPEN A NEW TEXT FILE                        CTRL + N
+CLOSE A FILE 				                        CTRL + W
+FIND A FLIE 				                        CTRL + P
+SELECT ALL OCCURENCES OF WORD               CTRL + D
+TO FIND A FILE                              CTRL + P
+TO OPEN A WINDOW REPLICA                    CTRL + | 
+UNDO                                        CTRL + Z 
+REDO                                        CTRL + Y
+DELETE A LINE                               CTRL + X   
+FIND TEXT                                   CTRL + F
+FIND TEXT IN ALL FILES                      CTRL + SHIFT + P
+TO RUN A COMMAND                            CTRL + SHIFT + p 
+ADD CURSOR ON EVERY LINE WHILE DRAGGING     CTRL + MOUSE_SCROLL + <DRAG_MOUSE> 
+TO OPEN A NEW TERMINAL                      CTRL + SHIFT + ~
+TO MAZIMIZE TERMINAL WINDOW                 CTRL + J 
+TO OPEN FILE EXPLORER                       CTRL + SHIFT + E 
+TO OPEN EXTENSIONS                          CTRL + SHIFT + X 
+TO OPEN SOURCE CONTROL                      CTRL + SHIFT + G 
